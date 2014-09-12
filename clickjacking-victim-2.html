@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Clickjacking Victim Demo</title>
+</head>
+<body>
+<h1>Really???</h1>
+Last Chance!
+<button style="position:absolute;top:100px;left:200px;" onclick="if (window.location.search.search('confirm=on') >= 0) alert('Attack succeeded!');">YES!</button>
+</form>
+</body>
+</html>
+
